@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "markov-sdk"
+version = "0.1.0"
+description = "Agent intent audit layer for S3"
+requires-python = ">=3.10"
+dependencies = [
+  "boto3>=1.28",
+  "botocore>=1.31",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["markov*"]

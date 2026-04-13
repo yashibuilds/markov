@@ -1,0 +1,6 @@
+-e ./sdk
+boto3>=1.28
+moto[s3]>=5.0
+freezegun>=1.2
+fastapi>=0.110
+uvicorn[standard]>=0.27
